@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Londrina+Solid:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  color: white;
+}
+p {
+  font-family: "Londrina Solid", cursive;
+  color: #818181;
+}
+
+.watches-block {
+  background-color: rgb(20, 20, 20);
+}
+.content {
+  padding: 15px 30px;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+.watches-block-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.description {
+  font-size: 15px;
+  color: #818181;
+}
+.watches-block-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+}
+.basket-wrapper {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+.watches-block-image {
+  width: 18px;
+  height: 18px;
+}
+.quantity {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  background-color: #b6907e;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: black;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-header {
+  font-size: x-large;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.nav {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+.nav-first {
+  text-decoration: underline;
+  color: #977869;
+}
+.call-wrap {
+  display: flex;
+  gap: 15px;
+}
+
+.custom-watches {
+  background-color: black;
+  color: white;
+}
+.custom-watches-container {
+  margin: 0 auto;
+  padding: 30px 0;
+  max-width: 1350px;
+  background-image: linear-gradient(
+    to left,
+    rgb(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.1)
+  ),
+  url("images/CustomWatches.png");
+  background-size: contain;
+  background-position: top 0px left 450px;
+  background-repeat: no-repeat;
+}
+.custom-watches-title {
+  font-size: 60px;
+  margin-bottom: 60px;
+}
+button {
+  margin-bottom: 200px;
+  background: transparent;
+  cursor: pointer;
+  color: #977869;
+  padding: 15px 25px;
+  border: 2px solid #977869;
+}
+button:hover {
+  position: relative;
+  bottom: 5px;
+  right: 5px;
+}
+.design {
+  margin-right: 25px;
+}
+.custom-watches-slider {
+  display: flex;
+  gap: 15px;
+}
+.point {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #2b2b2b;
+  cursor: pointer;
+}
+.point-orange {
+  background-color: #977869;
+}
+
+.our-store {
+  background-color: black;
+}
+.our-store-container {
+  margin: 0 auto;
+  padding: 200px 0;
+  max-width: 1350px;
+  background-image: linear-gradient(
+    to left,
+    rgb(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.1)
+  ),
+  url("images/OurStore.png");
+  background-size: contain;
+  background-position: top 0px right 450px;
+  background-repeat: no-repeat;
+}
+.our-store-wrap {
+  margin-left: auto;
+  margin-right: 100px;
+  width: 400px;
+}
+.left-right {
+  display: flex;
+  gap: 15px;
+}
+
+.collection {
+  padding-top: 20px;
+  background-color: black;
+  color: white;
+}
+.collection-title {
+  display: flex;
+  justify-content: space-between;
+}
+.collections-wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.latest,
+.popular {
+  text-decoration: none;
+  cursor: pointer;
+}
+.latest {
+  color: #977869;
+}
+.collection-container {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.image-watches {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 320px;
+  height: 520px;
+  border: 2px solid #2b2b2b;
+}
+.image-watches:hover {
+  position: relative;
+  bottom: 5px;
+  right: 5px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.brands {
+  background-color: #0e0e0e;
+}
+.brands-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.brands-image {
+  filter: grayscale(1);
+  filter: brightness(0);
+}
+
+.say {
+  padding-top: 20px;
+  background-color: black;
+  color: white;
+}
+.say-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+}
+.say-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.girl {
+  padding: 50px 0;
+  display: flex;
+}
+.say-image {
+  width: 190px;
+  height: 125px;
+}
+.saying-girl {
+  padding: 75px 10px 10px 25px;
+  width: 300px;
+}
+.say-slider {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+footer {
+  padding-top: 20px;
+  background-color: #0e0e0e;
+  color: white;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+.footer-title {
+  font-size: x-large;
+}
+.footer-logo,
+.footer-menu {
+  width: 250px;
+}
+.menu {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+  height: 125px;
+  list-style-type: none;
+}
+li {
+  color: #818181;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer-signup {
+  padding-left: 0;
+}
+form {
+  display: flex;
+}
+.enter-email {
+  height: 50px;
+  background-color: transparent;
+}
+.footer-button {
+  background-color: #b6907e;
+}
+
+
+@media (max-width: 1100px) {
+  .custom-watches-container,
+  .our-store-container {
+    background-image: none;
+    padding: 0;
+    display: flex;
+  }
+  .custom-watches-title {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .custom-watches-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  button {
+    margin-bottom: 25px;
+  }
+  .design {
+    margin-right: 0;
+  }
+  .custom-watches-slider {
+    display: flex;
+    justify-content: center;
+  }
+  .our-store-wrap {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .brands-container,
+  .say-container {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-around;
+  }
+  .logo-header {
+    text-align: center;
+  }
+  .footer-logo {
+    width: 150px;
+  }
+}
+
+@media (max-width: 759px) {
+.footer-container {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+}
+
+@media (max-width: 600px) {
+  .as-many {
+    text-align: center;
+  }
+  .our-store-wrap {
+    width: auto;
+  }
+  .say-title {
+    text-align: center;
+  }
+  .girl {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .saying-girl {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .header,
+  nav {
+    gap: 10px;
+  }
+  .nav {
+    font-size: 12px;
+  }
+}
